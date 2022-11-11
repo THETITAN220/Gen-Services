@@ -106,38 +106,6 @@ class MainWindow(QMainWindow):
 
 
 
-
-    ########################################################################
-    # Slide left menu function
-    ########################################################################
-    def slideLeftMenu(self):
-        # Get current left menu width
-        width = self.ui.slideMenuSubContainer.width()
-
-        # If minimized
-        if width == 0:
-            # Expand menu
-            newWidth = 200
-            
-        # If maximized
-        else:
-            # Restore menu
-            newWidth = 0
-            
-
-        # Animate the transition
-        self.animation = QPropertyAnimation(self.ui.slideMenuSubContainer, b"maximumWidth")#Animate minimumWidht
-        self.animation.setDuration(250)
-        self.animation.setStartValue(width)#Start value is the current menu width
-        self.animation.setEndValue(newWidth)#end value is the new menu width
-        self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animation.start()
-    #######################################################################
-
-
-
-
-
     #######################################################################
     # Add mouse events to the window
     #######################################################################
