@@ -99,7 +99,7 @@ class MainWindow(QMainWindow):
 
         #######################################################################
         #Left Menu toggle button
-        self.ui.open_close_side_bar_btn.clicked.connect(lambda: self.slideLeftMenu())
+        
 
 
         self.show()

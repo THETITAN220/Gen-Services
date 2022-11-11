@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>990</width>
-    <height>608</height>
+    <width>1040</width>
+    <height>635</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,6 +58,12 @@ background-color: #16191d
     </property>
     <item alignment="Qt::AlignLeft">
      <widget class="QWidget" name="slide_menu_container" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>115</width>
+        <height>100</height>
+       </size>
+      </property>
       <property name="maximumSize">
        <size>
         <width>200</width>
@@ -80,12 +86,12 @@ background-color: #16191d
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignLeft">
+       <item>
         <widget class="QWidget" name="slideMenuSubContainer" native="true">
          <property name="minimumSize">
           <size>
-           <width>0</width>
-           <height>0</height>
+           <width>128</width>
+           <height>100</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -94,272 +100,242 @@ background-color: #16191d
            <height>16777215</height>
           </size>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <property name="spacing">
-           <number>0</number>
+         <widget class="QFrame" name="frame_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>150</y>
+            <width>117</width>
+            <height>441</height>
+           </rect>
           </property>
-          <property name="leftMargin">
-           <number>5</number>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
           </property>
-          <property name="topMargin">
-           <number>0</number>
+          <property name="minimumSize">
+           <size>
+            <width>117</width>
+            <height>0</height>
+           </size>
           </property>
-          <property name="rightMargin">
-           <number>0</number>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <property name="bottomMargin">
-           <number>0</number>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
           </property>
-          <item alignment="Qt::AlignTop">
-           <widget class="QFrame" name="frame">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
-             <property name="spacing">
-              <number>0</number>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="homeBtn">
+             <property name="minimumSize">
+              <size>
+               <width>115</width>
+               <height>0</height>
+              </size>
              </property>
-             <property name="leftMargin">
-              <number>0</number>
+             <property name="toolTip">
+              <string>Home</string>
              </property>
-             <property name="topMargin">
-              <number>10</number>
+             <property name="styleSheet">
+              <string notr="true">selection-color: rgb(117, 113, 143);</string>
              </property>
-             <property name="rightMargin">
-              <number>0</number>
+             <property name="text">
+              <string>HOME</string>
              </property>
-             <property name="bottomMargin">
-              <number>10</number>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/home.svg</normaloff>:/icons/icons/home.svg</iconset>
              </property>
-             <item>
-              <widget class="QPushButton" name="menuBtn">
-               <property name="toolTip">
-                <string>Menu</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/menu.svg</normaloff>:/icons/icons/menu.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="frame_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
-             <property name="spacing">
-              <number>0</number>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
              </property>
-             <property name="leftMargin">
-              <number>0</number>
+             <property name="checkable">
+              <bool>false</bool>
              </property>
-             <property name="topMargin">
-              <number>10</number>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="myprofileBtn">
+             <property name="minimumSize">
+              <size>
+               <width>115</width>
+               <height>0</height>
+              </size>
              </property>
-             <property name="rightMargin">
-              <number>0</number>
+             <property name="cursor">
+              <cursorShape>ArrowCursor</cursorShape>
              </property>
-             <property name="bottomMargin">
-              <number>10</number>
+             <property name="mouseTracking">
+              <bool>true</bool>
              </property>
-             <item>
-              <widget class="QPushButton" name="homeBtn">
-               <property name="toolTip">
-                <string>Home</string>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">selection-color: rgb(117, 113, 143);</string>
-               </property>
-               <property name="text">
-                <string>HOME</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/home.svg</normaloff>:/icons/icons/home.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-               <property name="checkable">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="myprofileBtn">
-               <property name="toolTip">
-                <string>My Profile</string>
-               </property>
-               <property name="text">
-                <string>MY PROFILE</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/user.svg</normaloff>:/icons/icons/user.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="yourorderBtn">
-               <property name="toolTip">
-                <string>Your Order</string>
-               </property>
-               <property name="text">
-                <string>YOUR ORDER</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/shopping-cart.svg</normaloff>:/icons/icons/shopping-cart.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Expanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item alignment="Qt::AlignBottom">
-           <widget class="QFrame" name="frame_3">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <property name="spacing">
-              <number>0</number>
+             <property name="toolTip">
+              <string>My Profile</string>
              </property>
-             <property name="leftMargin">
-              <number>0</number>
+             <property name="text">
+              <string>MY PROFILE</string>
              </property>
-             <property name="topMargin">
-              <number>10</number>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/user.svg</normaloff>:/icons/icons/user.svg</iconset>
              </property>
-             <property name="rightMargin">
-              <number>0</number>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
              </property>
-             <property name="bottomMargin">
-              <number>10</number>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="yourorderBtn">
+             <property name="minimumSize">
+              <size>
+               <width>115</width>
+               <height>0</height>
+              </size>
              </property>
-             <item>
-              <widget class="QPushButton" name="settingsBtn">
-               <property name="toolTip">
-                <string>Settings</string>
-               </property>
-               <property name="text">
-                <string>SETTINGS</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/settings.svg</normaloff>:/icons/icons/settings.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="aboutusBtn">
-               <property name="toolTip">
-                <string>About Us</string>
-               </property>
-               <property name="text">
-                <string>ABOUT US</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/info.svg</normaloff>:/icons/icons/info.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="helpBtn">
-               <property name="toolTip">
-                <string>Help</string>
-               </property>
-               <property name="text">
-                <string>HELP</string>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/help-circle.svg</normaloff>:/icons/icons/help-circle.svg</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>24</width>
-                 <height>24</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
+             <property name="toolTip">
+              <string>Your Order</string>
+             </property>
+             <property name="text">
+              <string>YOUR ORDER</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/shopping-cart.svg</normaloff>:/icons/icons/shopping-cart.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="settingsBtn">
+             <property name="toolTip">
+              <string>Settings</string>
+             </property>
+             <property name="text">
+              <string>SETTINGS</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/settings.svg</normaloff>:/icons/icons/settings.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="helpBtn">
+             <property name="toolTip">
+              <string>Help</string>
+             </property>
+             <property name="text">
+              <string>HELP</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/help-circle.svg</normaloff>:/icons/icons/help-circle.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="aboutusBtn">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>About Us</string>
+             </property>
+             <property name="text">
+              <string>ABOUT US</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/info.svg</normaloff>:/icons/icons/info.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QFrame" name="frame">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>11</y>
+            <width>181</width>
+            <height>120</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="logo">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-1</y>
+             <width>171</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>logo</string>
+           </property>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -392,7 +368,7 @@ background-color: #16191d
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignTop">
+       <item>
         <widget class="QFrame" name="headerFrame">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -416,11 +392,17 @@ background-color: #16191d
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignTop">
+          <item>
            <widget class="QFrame" name="search_2">
+            <property name="minimumSize">
+             <size>
+              <width>685</width>
+              <height>60</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
-              <width>500</width>
+              <width>686</width>
               <height>16777215</height>
              </size>
             </property>
@@ -430,126 +412,88 @@ background-color: #16191d
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
-             <item>
-              <widget class="QFrame" name="frame_4">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_8">
-                <item alignment="Qt::AlignTop">
-                 <widget class="QFrame" name="frame_5">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_8">
-                   <item alignment="Qt::AlignTop">
-                    <widget class="QPushButton" name="open_close_side_bar_btn">
-                     <property name="maximumSize">
-                      <size>
-                       <width>200</width>
-                       <height>200</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string/>
-                     </property>
-                     <property name="icon">
-                      <iconset resource="side menu tutorial/icons.qrc">
-                       <normaloff>:/icons/icons/align-right.svg</normaloff>:/icons/icons/align-right.svg</iconset>
-                     </property>
-                     <property name="iconSize">
-                      <size>
-                       <width>24</width>
-                       <height>24</height>
-                      </size>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item alignment="Qt::AlignTop">
-              <widget class="QLineEdit" name="search">
-               <property name="minimumSize">
-                <size>
-                 <width>300</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>100</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="autoFillBackground">
-                <bool>false</bool>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(0, 0, 0);
+            <widget class="QPushButton" name="searchBtn">
+             <property name="geometry">
+              <rect>
+               <x>640</x>
+               <y>10</y>
+               <width>24</width>
+               <height>45</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>45</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/icons/search.svg</normaloff>:/icons/icons/search.svg</iconset>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="search">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>10</y>
+               <width>539</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>539</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>75</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>201</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);
 border-bottom: 3px solid rgb(230,5,64);</string>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="placeholderText">
-                <string>search</string>
-               </property>
-               <property name="clearButtonEnabled">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item alignment="Qt::AlignLeft|Qt::AlignTop">
-              <widget class="QPushButton" name="searchBtn">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
-                 <normaloff>:/icons/icons/search.svg</normaloff>:/icons/icons/search.svg</iconset>
-               </property>
-              </widget>
-             </item>
-            </layout>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>search</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
            </widget>
           </item>
-          <item alignment="Qt::AlignTop">
-           <widget class="QFrame" name="logo_2">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_6">
-             <item>
-              <widget class="QPushButton" name="logo">
-               <property name="text">
-                <string>logo</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item alignment="Qt::AlignRight|Qt::AlignTop">
+          <item>
            <widget class="QFrame" name="windowOption">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -558,7 +502,7 @@ border-bottom: 3px solid rgb(230,5,64);</string>
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <item alignment="Qt::AlignRight">
+             <item>
               <widget class="QPushButton" name="minimizeBtn">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -576,12 +520,12 @@ border-bottom: 3px solid rgb(230,5,64);</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
+                <iconset resource="icons.qrc">
                  <normaloff>:/icons/icons/minus.svg</normaloff>:/icons/icons/minus.svg</iconset>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight">
+             <item>
               <widget class="QPushButton" name="restore_window_button">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -605,12 +549,12 @@ border-bottom: 3px solid rgb(230,5,64);</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
+                <iconset resource="icons.qrc">
                  <normaloff>:/icons/icons/maximize-2.svg</normaloff>:/icons/icons/maximize-2.svg</iconset>
                </property>
               </widget>
              </item>
-             <item alignment="Qt::AlignRight">
+             <item>
               <widget class="QPushButton" name="closeBtn">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -628,7 +572,7 @@ border-bottom: 3px solid rgb(230,5,64);</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
+                <iconset resource="icons.qrc">
                  <normaloff>:/icons/icons/x.svg</normaloff>:/icons/icons/x.svg</iconset>
                </property>
               </widget>
@@ -653,9 +597,303 @@ border-bottom: 3px solid rgb(230,5,64);</string>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
+         <widget class="QFrame" name="Cab">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>11</y>
+            <width>331</width>
+            <height>271</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="CabBtn">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>220</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CAB</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>0</y>
+             <width>275</width>
+             <height>183</height>
+            </rect>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>fuelcar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="Cleaning">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>20</y>
+            <width>240</width>
+            <height>277</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>218</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>cleaning.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="CleaningBtn">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>220</y>
+             <width>57</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>CLEANING</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="Laundry">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>10</y>
+            <width>322</width>
+            <height>277</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>11</y>
+             <width>300</width>
+             <height>168</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>laundry.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="LaundryBtn">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>210</y>
+             <width>53</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>LAUNDRY</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="Electrical">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>290</y>
+            <width>321</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="ElectricalBtn">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>210</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ELECTRICAL</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>40</y>
+             <width>221</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>light.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="Yard">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>290</y>
+            <width>322</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>11</x>
+             <y>11</y>
+             <width>244</width>
+             <height>207</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>yard_work.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="YardBtn">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>230</y>
+             <width>31</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>YARD</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="Repair">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>280</y>
+            <width>211</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>216</width>
+             <height>233</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>mechanic.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="RepairsBtn">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>220</y>
+             <width>91</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>REPAIRS</string>
+           </property>
+          </widget>
+         </widget>
         </widget>
        </item>
-       <item alignment="Qt::AlignBottom">
+       <item>
         <widget class="QFrame" name="footer">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -740,7 +978,7 @@ border-bottom: 3px solid rgb(230,5,64);</string>
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="side menu tutorial/icons.qrc">
+                <iconset resource="icons.qrc">
                  <normaloff>:/icons/icons/box.svg</normaloff>:/icons/icons/box.svg</iconset>
                </property>
               </widget>
@@ -780,7 +1018,7 @@ border-bottom: 3px solid rgb(230,5,64);</string>
   </widget>
  </widget>
  <resources>
-  <include location="side menu tutorial/icons.qrc"/>
+  <include location="icons.qrc"/>
  </resources>
  <connections/>
 </ui>
